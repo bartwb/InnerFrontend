@@ -1,0 +1,39 @@
+#mainDetailsWrapper{
+    justify-content: center;
+    align-items: start;
+    margin-top: 100px;
+}
+
+#mainDetailsWrapper .outerBox h1{
+    width: 100%;
+    text-align: start;
+}
+
+.batterySchematicBox{
+    height: 500px;
+    margin-bottom: 50px;
+    padding: 25px 50px;
+    background-color: var(--color-background);
+    border-radius: 5px;
+}
+
+.batterySchematicBox img{
+    max-height: 100%;
+    border-radius: 5px;
+}
+
+
+.batteryInfobox{
+    padding: 25px 50px;
+    background-color: var(--color-background);
+    width: fit-content;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes items evenly */
+    align-items: flex-start; /* Aligns text to the left */
+}
+
+.batteryInfobox img{
+    border-radius: 5px;
+}

@@ -1,0 +1,78 @@
+.reportBox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--color-background);
+    border-radius: 8px;
+    margin-right: 25px;
+    min-width: 500px;
+  }
+
+  .reportBox .btn-green{
+    margin: 5px 0 15px;
+  }
+
+  .reportTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .reportTitle button{
+    flex-shrink: 0;
+    height: 50px;
+    padding: 0 20px;
+  }
+  
+  .boxHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--color-primary);
+    color: var(--color-text-primary);
+    cursor: pointer;
+  }
+  
+  .boxHeader h3 {
+    margin: 0 20px 0 0;
+  }
+  
+  .boxHeader button {
+    background: none;
+    border: none;
+    color: var(--color-text-primary);
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .boxContent {
+    padding: 10px;
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+  }
+  
+  .boxContent ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .boxContent li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-top: 1px solid var(--color-text-secondary);
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .boxContent button {
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  

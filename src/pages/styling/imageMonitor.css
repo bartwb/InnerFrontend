@@ -1,0 +1,67 @@
+#mainImageMonitorWrapper{
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.toolBar{
+    width: 100vw;
+    height: 100px;
+    background-color: black;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#mainImageMonitorWrapper .previewBox{
+    background-color: var(--color-surface);
+    box-sizing: border-box;
+    padding: 50px 25px;
+    width: 15%;
+    margin-left: 5%;    
+  height: 80vh;
+}
+
+#mainImageMonitorWrapper .previewBox .previewImages{
+overflow-y:scroll;
+max-height: 90%;
+overflow-x: hidden;
+}
+
+#mainImageMonitorWrapper .previewBox .previewImages img{
+
+    max-width: 100%;
+}
+
+#mainImageMonitorWrapper .splitter{
+margin-top: 50px;
+flex-wrap: nowrap;
+}
+
+#mainImageMonitorWrapper .viewBox{
+    width: 75%;
+    margin-right: 5%;
+    display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 5px;
+  padding: 0 10px; 
+  height: 80vh;
+}
+
+#mainImageMonitorWrapper .viewBox .viewImageWrapper {
+    width: 100%;
+    background-color: var(--color-surface);
+    height: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden; 
+  }
+  
+  #mainImageMonitorWrapper .viewBox img {
+    max-height: 100%;
+    max-width: 100%; /* Maintain the aspect ratio */
+    display: block; 
+  }

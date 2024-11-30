@@ -1,0 +1,93 @@
+.tableContainer {
+  margin: 20px auto;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: var(--color-surface);
+  box-shadow: 0 4px 6px var(--color-overlay);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  text-align: left;
+}
+
+th, td {
+  padding: 12px 16px;
+  border: 1px solid var(--color-border);
+  min-width: 100px;
+  max-width: 300px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+th {
+  position: relative;
+  background-color: var(--color-primary);
+  color: var(--color-text-primary);
+  font-weight: bold;
+}
+
+th span {
+  cursor: pointer;
+  user-select: none;
+  font-weight: bold;
+  margin-bottom: 5px; /* Ensures alignment for filter inputs */
+}
+
+th span:active {
+  user-select: none; /* Prevent text selection */
+}
+
+.filterInput {
+  margin-top: 5px;
+  padding: 5px;
+  font-size: 0.9rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.filterInput:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 3px var(--color-primary);
+}
+
+tr:nth-child(even) {
+  background-color: var(--color-surface);
+}
+
+tr:nth-child(odd) {
+  background-color: var(--color-background);
+}
+
+tr:hover {
+  background-color: var(--color-text-muted);
+  color: var(--color-text-primary);
+  cursor: pointer;
+}
+
+tr td:last-of-type{
+  display: flex;
+  justify-content: center;
+}
+
+
+.actionButton {
+  padding: 8px 12px;
+  background-color: var(--color-success);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  min-width: 120px;
+}
+
+.actionButton:hover {
+  background-color: var(--color-success-dim);
+}

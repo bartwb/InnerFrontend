@@ -1,0 +1,42 @@
+#mainMenuWrapper{    
+    justify-content: center;
+    align-items: center;
+}
+
+#menuBox .logoBox p{
+    margin-top: 0;
+}
+
+.menuButtons{
+    margin-top: 50px;
+}
+
+#menuBox a{
+    text-decoration: none;
+    margin: 0;
+}
+
+#menuBox button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;        
+    height: 80px;          
+    margin: 20px auto;     
+    background-color: var(--color-surface);
+    color: var(--color-text-primary);
+    font-size: 1.5rem;        
+    font-weight: bold;
+    border: 2px solid var(--color-border);
+    border-radius: 5px;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 6px var(--color-overlay);
+    cursor: pointer;
+  }
+  
+  #menuBox button:hover {
+    background-color: var(--color-primary);
+    color: var(--color-text-primary);
+    box-shadow: 0 6px 10px var(--color-overlay);
+  }
+  

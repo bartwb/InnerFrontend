@@ -1,0 +1,11 @@
+#mainWorkListsWrapper{
+    justify-content: center;
+    align-items: start;
+    padding-top: 100px;
+}
+
+
+#workListsBox h1{
+    text-align: start;
+    margin-bottom: 50px;
+}
